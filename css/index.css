@@ -18,12 +18,25 @@
 }
 
 /*--- HOMEPAGE SECTION ---*/
-section {
+#homepage{
+  height: 640px;
+  overflow: hidden;
+}
+#sec1part1{
+  background-image: url("image/header1.jpg");
+  height: 440px;
+}
+#sec1part2{
+  height: 200px;
+}
+
+/*--- WHAT WE DO SECTION ---*/
+.section {
   padding: 150px 0;
 }
 
 #sec1part1 {
   padding: 156px 0 100px;
-  background-image: url("image/header1.jpg");
+ 
 }
 
