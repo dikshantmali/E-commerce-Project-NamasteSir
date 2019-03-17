@@ -23,20 +23,36 @@
   overflow: hidden;
 }
 #sec1part1{
-  background-image: url("image/header1.jpg");
+  padding: 200px 0 100px;
   height: 440px;
 }
 #sec1part2{
+  padding-top: 45px;
   height: 200px;
 }
-
 /*--- WHAT WE DO SECTION ---*/
 .section {
   padding: 150px 0;
 }
 
-#sec1part1 {
-  padding: 156px 0 100px;
- 
-}
 
+
+@media only screen and (max-width: 600px) {
+  #homepage{
+    height: 1040px;
+  }
+  #sec1part1{
+    padding: 150px 0 100px;
+    height: 440px;
+  }
+  #sec1part1 > h1{
+    font-size: 20px;
+  }
+  #sec1part2{
+    padding-bottom: 25px;
+    height: 250px;
+  }
+  .c-field {
+    margin-top:20px;
+  }
+}
