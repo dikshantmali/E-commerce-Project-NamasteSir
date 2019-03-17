@@ -1,58 +1,73 @@
 /*--- NAVBAR ---- */
-.navbar-new-top ul{
+.navbar-top ul {
   margin-right: 9%;
 }
-.navbar-new-top ul li{
+
+.navbar-top ul li {
   margin-right: 8%;
 }
-.navbar-new-bottom{
+
+.navbar-bottom {
   background-color: #f7f7f7;
-  box-shadow: 0 5px 6px -2px rgba(0,0,0,.3);
+  box-shadow: 0 5px 6px -2px rgba(0, 0, 0, .3);
   border-top: 1px solid #e0e0e0;
   margin-top: 4%;
   height: 40px;
 }
-.navbar-new-bottom ul li{
+
+.navbar-bottom ul li {
   margin-left: 2%;
   margin-right: 2%;
 }
 
 /*--- HOMEPAGE SECTION ---*/
-#homepage{
+#homepage {
   height: 640px;
   overflow: hidden;
 }
-#sec1part1{
+
+#homepage #wrapper1 {
   padding: 200px 0 100px;
   height: 440px;
 }
-#sec1part2{
-  padding-top: 45px;
+
+#homepage #wrapper2 {
+  padding: 35px 0 100px;
   height: 200px;
 }
-/*--- WHAT WE DO SECTION ---*/
-.section {
-  padding: 150px 0;
+
+#homepage #wrapper2 a:link {
+  text-decoration: none;
 }
 
-
+#homepage #wrapper2 .card:hover {
+  background-color: cadetblue;
+  color: white;
+}
 
 @media only screen and (max-width: 600px) {
-  #homepage{
+  #homepage {
     height: 1040px;
   }
-  #sec1part1{
+
+  #homepage #wrapper1 {
     padding: 150px 0 100px;
     height: 440px;
   }
-  #sec1part1 > h1{
-    font-size: 20px;
-  }
-  #sec1part2{
+
+
+  #homepage #wrapper2 {
     padding-bottom: 25px;
-    height: 250px;
+    height: 450px;
   }
-  .c-field {
-    margin-top:20px;
+
+  #homepage #wrapper2 .c-field {
+    margin-top: 20px;
   }
+}
+
+
+/*--- WHAT WE DO SECTION ---*/
+.section {
+  padding: 150px 0;
 }
