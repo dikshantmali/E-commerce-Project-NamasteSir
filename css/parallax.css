@@ -1,0 +1,32 @@
+.parallax1{
+        background-image: url(../image/pi1.jpg);
+        height: 300px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax2{
+        background-image: url(../image/pi2.jpg);
+        height: 300px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax3{
+        background-image: url(../image/pi3.jpg);
+        height: 300px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax4{
+        background-image: url(../image/pi4.jpg);
+        height: 300px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }

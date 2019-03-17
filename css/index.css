@@ -20,7 +20,10 @@
   margin-right: 2%;
 }
 
-/*--- HOMEPAGE SECTION ---*/
+
+/*--------------------*/
+/* HOMEPAGE SECTION */
+/*--------------------*/
 #homepage {
   height: 640px;
   overflow: hidden;
@@ -34,6 +37,7 @@
 #homepage #wrapper2 {
   padding: 35px 0 100px;
   height: 200px;
+  position: relative;
 }
 
 #homepage #wrapper2 a:link {

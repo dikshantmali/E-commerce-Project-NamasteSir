@@ -1,0 +1,2 @@
+$(document).ready(function(){{if(typeof $.cookie('promodesktop')==='undefined')
+{$("#promoModal").modal();$.cookie("promodesktop",1,{expires:1});}}});
