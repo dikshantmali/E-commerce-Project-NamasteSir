@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var x = document.getElementById("customer");   
+            document.querySelectorAll('.btn').forEach(function(a) {
+    
+    a.onclick = function() {
+
+ 
+            x.style.display="none";
+    }
+
+            /*
+            document.querySelector('.btn').onclick=function() {
+            var x = document.getElementById("customer");   
+            x.style.display="none";
+            };
+            */
+        });
+    </script>
+</head>
+
+<body>
+        <a class="btn btn-success" class="btn">button2</a>
+    <a class="btn btn-success" class="btn">button1</a>
+   
+    <div id="customer">
+        <h1>we are customer</h1>
+    </div>
+</body>
+
+</html>

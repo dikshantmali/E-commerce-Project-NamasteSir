@@ -301,12 +301,6 @@ h2 {
 /* TEAM */
 /*--------------------*/
 
-#team{
-	display: inline;
-	padding: 70px 0px;
-	float: left;
-	width: 100%;
-}
 .team-area {
 	display: inline;
 	float: left;
@@ -351,18 +345,18 @@ h2 {
 }
 
 .team-img-1 { 
-	background-image: url(assets/images/team-member1.png);
+	background-image: url(../assets/images/team-member1.png);
 }
 
 .team-img-2 { 
-	background-image: url(assets/images/team-member2.png);
+	background-image: url(../assets/images/team-member2.png);
 }
 
 .team-img-3 { 
-	background-image: url(assets/images/team-member3.png);
+	background-image: url(../assets/images/team-member3.png);
 }
 .team-img-4 { 
-	background-image: url(assets/images/team-member4.png);
+	background-image: url(../assets/images/team-member4.png);
 }
 .team-info {
 	position: absolute;
@@ -1104,7 +1098,7 @@ h2 {
 /*--------------------*/
 
 #contact {
-	background-image: url("assets/images/contact-bg.jpg");
+	background-image: url("../assets/images/contact-bg.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
