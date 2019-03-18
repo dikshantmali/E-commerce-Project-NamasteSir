@@ -69,6 +69,15 @@
     padding: 150px 0 100px;
     height: 440px;
   }
+  @media only screen and (max-width: 360px){
+    #b{
+      font-size: 10px;
+    }
+    #f{
+      font-size: 10px;
+      }
+
+  }
 
 
   #homepage #wrapper2 {
@@ -86,3 +95,16 @@
 .section {
   padding: 150px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
