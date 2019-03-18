@@ -68,6 +68,15 @@
     padding: 150px 0 100px;
     height: 440px;
   }
+  @media only screen and (max-width: 360px){
+    #b{
+      font-size: 10px;
+    }
+    #f{
+      font-size: 10px;
+      }
+
+  }
 
 
   #homepage #wrapper2 {
@@ -83,4 +92,21 @@
 /*--- WHAT WE DO SECTION ---*/
 .section {
   padding: 150px 0;
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> b86d92a12794f82db9f4d7ffad90d7fd9f8ce3ad
