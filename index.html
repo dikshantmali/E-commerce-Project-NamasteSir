@@ -37,6 +37,51 @@
     <!-- Pacifico for 404 page   -->
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var x = document.getElementById("div1")
+            var y = document.getElementById("div2")
+            var z = document.getElementById("div3")
+            var p = document.getElementById("div4")
+            // Have each button change the color of the heading
+            document.querySelectorAll('.btn-change').forEach(button => {
+                button.onclick = () => {
+                    if (button.dataset.btn == 'btn1' && x.style.display=='none')
+                    {
+                        x.style.display='block';
+                    }
+                    else{
+                        x.style.display='none';
+                    }
+
+                    if (button.dataset.btn == 'btn2' && y.style.display=='none')
+                    {
+                        y.style.display='block';
+                    }
+                    else{
+                        y.style.display='none';
+                    }
+
+                    if (button.dataset.btn == 'btn3'  && z.style.display=='none')
+                    {
+                        z.style.display='block';
+                    }
+                    else{
+                        z.style.display='none';
+                    }
+
+                    if (button.dataset.btn == 'btn4'  && p.style.display=='none')
+                    {
+                        p.style.display='block';
+                    }
+                    else{
+                        p.style.display='none';
+                    }
+                };
+            });
+
+        });
+    </script>
 </head>
 
 <body>
@@ -44,7 +89,7 @@
     <!---------- NAVBAR -------->
     <nav class="navbar navbar-expand-lg fixed-top  bg-light navbar-top">
         <div class="container">
-       
+
             <a class="navbar-brand js-scroll-trigger" href="#homepage">
                 <img src="image/logo.png" width="100" height="30" class="d-inline-block align-top" alt="">
                 Namaste Sir
@@ -62,25 +107,25 @@
     </nav>
     <nav class="navbar navbar-expand-md fixed-top  navbar-bottom">
         <div class="container">
-         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto w-100 justify-content-center ">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#wwd">How To</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  js-scroll-trigger" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#aboutus">about us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#gallery">team</a>
-                </li>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto w-100 justify-content-center ">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#wwd">How To</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  js-scroll-trigger" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#aboutus">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#gallery">team</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#feedback">Feedback</a>
-                </li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#feedback">Feedback</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -89,52 +134,85 @@
     <section id="homepage">
         <div id="wrapper1" class="bg-primary text-white" style="background-image: url(); background-position: center left bottom">
             <div class="container text-center">
-                <h1 style="font-weight: 1000;"><bold>Welcome to Your Dream World</bold></h1>
+                <h1 style="font-weight: 1000;">
+                    <bold>Welcome to Your Dream World</bold>
+                </h1>
                 <p class="lead">A online job assistant ready to fullfill your desire</p>
             </div>
         </div>
         <div id="wrapper2" class="container-fluid bg-light text-center">
             <div class="container">
-                
-                <div class="row">
-                    <a href="#" class="col-md-3">
+
+                <div class="row" id="field">
+                    <div class="col-md-3">
                         <div class="c-field mx-sm-2 p-6">
                             <div class="text-success text-center mt-3">
-                                <img src="image/talent.png" width="50" height="50" class="img-responsive d-inline-block align-top"
-                                    alt="" />
-                                <h1>Talent</h1>
+                                <img src="image/talent.png" class="img-responsive d-inline-block align-top" alt="" />
+                                <button class="btn-change" data-btn="btn1">Talent</button>
                             </div>
                         </div>
-                    </a>
-                    <a href="#" class="col-md-3">
+                    </div>
+                    <div class="col-md-3">
                         <div class="c-field mx-sm-2 p-6">
                             <div class="text-success text-center mt-3">
-                                <img src="image/passion.png" width="50" height="50" class="img-responsive d-inline-block align-top"
-                                    alt="" />
-                                <h1>Passion</h1>
+                                <img src="image/passion.png" class="img-responsive d-inline-block align-top" alt="" />
+                                <button class="btn-change" data-btn="btn2">Passion</button>
                             </div>
 
                         </div>
-                    </a>
-                    <a href="#" class="col-md-3">
+                    </div>
+                    <div class="col-md-3">
                         <div class="c-field mx-sm-2 p-6">
                             <div class="text-success text-center mt-3">
-                                <img src="image/product.png" width="50" height="50" class="img-responsive d-inline-block align-top"
-                                    alt="" />
-                                <h1>Product</h1>
+                                <img src="image/product.png" class="img-responsive d-inline-block align-top" alt="" />
+                                <button class="btn-change" data-btn="btn3">Product</button>
                             </div>
 
                         </div>
-                    </a>
-                    <a href="#" class="col-md-3">
+                    </div>
+                    <div class="col-md-3">
                         <div class="c-field mx-sm-2 p-6">
                             <div class="text-success text-center mt-3">
-                                <img src="image/freelancer.png" width="50" height="50" class="img-responsive d-inline-block align-top"
-                                    alt="" />
-                                <h1>Freelancer</h1>
+                                <img src="image/freelancer.png" class="img-responsive d-inline-block align-top" alt="" />
+                                <button class="btn-change" data-btn="btn4">Freelancer</button>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                </div>
+                <div class="row " id="field-data">
+                    <div id="div1" class="container-fluid card-group">
+                        <div class="card">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div2" class="container-fluid data" style="display:none;">div 2</div>
+                    <div id="div3" class="container-fluid data" style="display:none;">div 3</div>
+                    <div id="div4" class="container-fluid data" style="display:none;">div 4</div>
                 </div>
             </div>
         </div>
@@ -154,7 +232,7 @@
                             <div class="single-wc-content wow fadeInUp">
                                 <span class="fa fa-users wc-icon"></span>
                                 <h4 class="wc-tittle">Post a job (it’s free)</h4>
-                                <p>Tell us what you need."Namaste Sir" connects you with top talent around the world, or near
+                                <p>"Namaste Sir" connects you with top talent around the world, or near
                                     you.</p>
                             </div>
                         </li>
@@ -169,7 +247,8 @@
                             <div class="single-wc-content wow fadeInUp">
                                 <span class="fa fa-line-chart wc-icon"></span>
                                 <h4 class="wc-tittle">Payment simplified</h4>
-                                <p>Pay hourly or fixed-price and receive invoices through "Namaste Sir". Only pay for work you
+                                <p>Pay hourly or fixed-price and receive invoices through "Namaste Sir". Only pay for
+                                    work you
                                     authorize.</p>
                             </div>
                         </li>
@@ -177,7 +256,8 @@
                             <div class="single-wc-content wow fadeInUp">
                                 <span class="fa fa-bus wc-icon"></span>
                                 <h4 class="wc-tittle">Collaborate easily</h4>
-                                <p>Use “Namaste Sir” to connect from companies, factories, shops, market etc form your desktop or mobile.</p>
+                                <p>Use “Namaste Sir” to connect from companies, factories, shops, market etc form your
+                                    desktop or mobile.</p>
                             </div>
                         </li>
                     </ul>
@@ -185,12 +265,12 @@
             </div>
     </section>
     <section class="parallax1 section text-center text-white">
-    <div class="hero-text">
-    <h1 class="parallax_tagline align-middle">NOW ARTIST NEVER BE ALONE</h1>
-    <p>And I'm a Photographer</p>
-    <button>Hire me</button>
-  </div>
-        
+        <div class="hero-text">
+            <h1 class="parallax_tagline align-middle">NOW ARTIST NEVER BE ALONE</h1>
+            <p>And I'm a Photographer</p>
+            <button>Hire me</button>
+        </div>
+
     </section>
 
 
@@ -201,7 +281,8 @@
                 <div class="title-area">
                     <h2 class="tittle">Service we offer</h2>
                     <span class="tittle-line"></span>
-                    <p>We are equipped with the knowledge and ability to deliver a broad cross-section of services to meet your changing needs, from the hands-on approach.</p>
+                    <p>We are equipped with the knowledge and ability to deliver a broad cross-section of services to
+                        meet your changing needs, from the hands-on approach.</p>
                 </div>
                 <!-- service content -->
                 <ul class="row">
@@ -209,42 +290,48 @@
                         <div class="single-service wow slideInUp">
                             <span class="fa fa-edit service-icon"></span>
                             <h4 class="service-title">Contant Writing</h4>
-                            <p> Your skills of different types of texts, like emails, text messages, essays and letters, is a very important skill</p>
+                            <p> Your skills of different types of texts, like emails, text messages, essays and
+                                letters, is a very important skill</p>
                         </div>
                     </li>
                     <li class="col-md-3 col-sm-6">
                         <div class="single-service wow slideInUp">
                             <span class="fa fa-sort-amount-asc service-icon"></span>
                             <h4 class="service-title">Strategy</h4>
-                            <p>Strategy is a high level plan to achieve goals under conditions of uncertainty. It is "art of the general"</p>
+                            <p>Strategy is a high level plan to achieve goals under conditions of uncertainty. It is
+                                "art of the general"</p>
                         </div>
                     </li>
                     <li class="col-md-3 col-sm-6">
                         <div class="single-service wow slideInUp">
                             <span class="fa fa-map-o service-icon"></span>
                             <h4 class="service-title">Portfolio</h4>
-                            <p>In finance, a portfolio is a collection of investments held by an company, financial institution / individual.</p>
+                            <p>In finance, a portfolio is a collection of investments held by an company, financial
+                                institution / individual.</p>
                         </div>
                     </li>
                     <li class="col-md-3 col-sm-6">
                         <div class="single-service wow slideInUp">
                             <span class="fa fa-rocket service-icon"></span>
                             <h4 class="service-title">Analystic</h4>
-                            <p>Analyse your Stock Portfolios, And tracking your investments in stocks, mutual fund, gold, bank.</p>
+                            <p>Analyse your Stock Portfolios, And tracking your investments in stocks, mutual fund,
+                                gold, bank.</p>
                         </div>
                     </li>
                     <li class="col-md-3 col-sm-6">
                         <div class="single-service wow slideInUp">
                             <span class="fa fa-car service-icon"></span>
                             <h4 class="service-title">Usability</h4>
-                            <p>Usability is part of the broader term “user experience” and/or use of a product or website.</p>
+                            <p>Usability is part of the broader term “user experience” and/or use of a product or
+                                website.</p>
                         </div>
                     </li>
                     <li class="col-md-3 col-sm-6">
                         <div class="single-service wow slideInUp">
                             <span class="fa fa-bank service-icon"></span>
                             <h4 class="service-title">Business solution</h4>
-                            <p>Business Solutions Consultancy services for Business to help you create efficiencies IT Solutions.</p>
+                            <p>Business Solutions Consultancy services for Business to help you create efficiencies IT
+                                Solutions.</p>
                         </div>
                     </li>
                     <li class="col-md-3 col-sm-6">
@@ -258,7 +345,8 @@
                         <div class="single-service wow slideInUp">
                             <span class="fa fa-support service-icon"></span>
                             <h4 class="service-title">Support</h4>
-                            <p>Support is the most general: "the policy of Cromwell, who supported the growing power against the declining power".
+                            <p>Support is the most general: "the policy of Cromwell, who supported the growing power
+                                against the declining power".
                             </p>
                         </div>
                     </li>
@@ -268,13 +356,13 @@
         </div>
     </section>
     <section class="parallax2 section text-center text-white">
-    <div class="hero-text">
-    <h1 class="parallax_tagline">WORKER WORK ALL AROUND THE CITY</h1>
-    <p>And I'm a Mechanic</p>
-    <button>Hire me</button>
-  </div>
-           
-        </section>
+        <div class="hero-text">
+            <h1 class="parallax_tagline">WORKER WORK ALL AROUND THE CITY</h1>
+            <p>And I'm a Mechanic</p>
+            <button>Hire me</button>
+        </div>
+
+    </section>
 
 
     <!---------- ABOUT US -------->
@@ -295,7 +383,9 @@
                                     <div class="title-area">
                                         <h2 class="tittle">About <span>our</span> project</h2>
                                         <span class="tittle-line"></span>
-                                        <p>Just as we believe it's important for us to know who you are and how you approach your business, we also believe it's important for you to know who we are and how we approach ours.</p>
+                                        <p>Just as we believe it's important for us to know who you are and how you
+                                            approach your business, we also believe it's important for you to know who
+                                            we are and how we approach ours.</p>
 
                                         <p>----------------------</p>
                                         <div class="about-btn-area">
@@ -312,13 +402,13 @@
         </div>
     </section>
     <section class="parallax3 section text-center text-white">
-      <div class="hero-text">
-      <h1 class="parallax_tagline">DRIVER NEVER SIT QUIT</h1>
-    <p>And I'm a Driver</p>
-    <button>Hire me</button>
-  </div>
-          
-        </section>
+        <div class="hero-text">
+            <h1 class="parallax_tagline">DRIVER NEVER SIT QUIT</h1>
+            <p>And I'm a Driver</p>
+            <button>Hire me</button>
+        </div>
+
+    </section>
 
 
     <!---------- GALLERY -------->
@@ -330,7 +420,8 @@
                         <div class="title-area">
                             <h2 class="tittle">MEET OUR TEAM</h2>
                             <span class="tittle-line"></span>
-                            <p>We believe that good design is powerful, hard work is essential,and exploring the unknown is important.</p>
+                            <p>We believe that good design is powerful, hard work is essential,and exploring the
+                                unknown is important.</p>
                         </div>
                         <!-- Start team content -->
                         <div class="team-content">
@@ -409,58 +500,58 @@
     </section>
     <section class="parallax4 section text-center text-white">
         <div class="hero-text">
-     <h1 class="parallax_tagline">YOU BE ENTREPRENEUR GET CONNECT WITH US</h1>
-    <p>And I'm a counselor</p>
-    <button>Hire me</button>
-  </div>
-          
-          
-        </section>
+            <h1 class="parallax_tagline">YOU BE ENTREPRENEUR GET CONNECT WITH US</h1>
+            <p>And I'm a counselor</p>
+            <button>Hire me</button>
+        </div>
+
+
+    </section>
 
     <!---------- FEEDBACK --------->
     <section id="feedback" class="section">
         <div class="container">
             <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="contact-left wow fadeInLeft">
-                              <h2>Contact with us</h2>
-                              <address class="single-address">
-                                <h4>Postal address:</h4>
-                                <p>Poornima Institute of Engg. & Tech. ,Piet marg, Sitapura, RICCO industry area JAIPUR</p>
-                              </address>
-                               <address class="single-address">
-                                <h4>Headquarters:</h4>
-                                <p>Goorushikhar Boy Hostel PIET, JAIPUR</p>
-                              </address>
-                               <address class="single-address">
-                                <h4>Phone</h4>
-                                <p>Phone Number: 1234567890</p>
-                              </address>
-                               <address class="single-address">
-                                <h4>E-Mail</h4>
-                                <p>Support: ----------------</p>
-                                <p>Sales: --------------</p>
-                              </address>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="contact-left wow fadeInLeft">
+                        <h2>Contact with us</h2>
+                        <address class="single-address">
+                            <h4>Postal address:</h4>
+                            <p>Poornima Institute of Engg. & Tech. ,Piet marg, Sitapura, RICCO industry area JAIPUR</p>
+                        </address>
+                        <address class="single-address">
+                            <h4>Headquarters:</h4>
+                            <p>Goorushikhar Boy Hostel PIET, JAIPUR</p>
+                        </address>
+                        <address class="single-address">
+                            <h4>Phone</h4>
+                            <p>Phone Number: 1234567890</p>
+                        </address>
+                        <address class="single-address">
+                            <h4>E-Mail</h4>
+                            <p>Support: ----------------</p>
+                            <p>Sales: --------------</p>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <div class="contact-right wow fadeInRight">
+                        <h2>Send a message</h2>
+                        <form action="" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name">
                             </div>
-                          </div>
-                          <div class="col-md-8 col-sm-6 col-xs-12">
-                            <div class="contact-right wow fadeInRight">
-                              <h2>Send a message</h2>
-                              <form action="" class="contact-form">
-                                <div class="form-group">                
-                                  <input type="text" class="form-control" placeholder="Name">
-                                </div>
-                                <div class="form-group">                
-                                  <input type="email" class="form-control" placeholder="Enter Email">
-                                </div>              
-                                <div class="form-group">
-                                  <textarea class="form-control"></textarea>
-                                </div>
-                                <button type="submit" data-text="SUBMIT" class="button button-default"><span>SUBMIT</span></button>
-                              </form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter Email">
                             </div>
-                          </div>
-                  
+                            <div class="form-group">
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <button type="submit" data-text="SUBMIT" class="button button-default"><span>SUBMIT</span></button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -468,22 +559,22 @@
 
     <!---------- FOOTER ---------->
     <footer id="footer">
-            <div class="footer-top">
-              <div class="container">
+        <div class="footer-top">
+            <div class="container">
                 <div class="row">
-                  <div class="col-md-12">
-                    <div class="footer-top-area">             
-                        <a class="footer-logo" href="#"><img src="image/logo.png" width="100" height="100" alt="Logo"></a>              
-                      
+                    <div class="col-md-12">
+                        <div class="footer-top-area">
+                            <a class="footer-logo" href="#"><img src="image/logo.png" width="100" height="100" alt="Logo"></a>
+
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-            <div class="footer-bottom">
-              <p>copyright</p>
-            </div>
-          </footer>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright</p>
+        </div>
+    </footer>
 
 
     <!-- Bootstrap core JavaScript -->
